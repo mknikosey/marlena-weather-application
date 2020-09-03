@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather Application</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-light bg-light">
+        <form class="form-inline" id="search-form">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search city name"
+            aria-label="Search"
+            id="search-bar"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Go
+          </button>
+          <button
+            id="current-temp-button"
+            class="btn btn-outline-success my-2 my-sm-0"
+            type="button"
+          >
+            Current Location
+          </button>
+        </form>
+      </nav>
+
+      <br />
+      <br />
+
+      <div class="card bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-header" id="city">Boston, MA</div>
+        <br />
+        <h2>Time</h2>
+        <div class="card-body">
+          <a href="#" id="celcius">C°</a>
+          <div class="card-body" id="temp">temperature</div>
+          <div class="card-body"><a href="#" id="faren">F°</a></div>
+          <h5 class="card-title"></h5>
+        </div>
+      </div>
+
+      <div class="card w-50">
+        <div class="card-body">
+          <h5 class="card-title">Your 5 day forecast</h5>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="row">
+        <div class="col">
+          <div class="card text-center" style="width: 10rem; height: 12rem;">
+            <div class="card-body">
+              <h5 class="card-title">Monday</h5>
+              <p class="card-text">
+                91°<br />
+                ☀️
+              </p>
+              <a href="#" class="btn btn-primary">Hourly details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" style="width: 10rem; height: 12rem;">
+            <div class="card-body">
+              <h5 class="card-title">Tuesday</h5>
+              <p class="card-text">92° <br />🌤</p>
+              <a href="#" class="btn btn-primary">Hourly details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" style="width: 10rem; height: 12rem;">
+            <div class="card-body">
+              <h5 class="card-title">Wednesday</h5>
+              <p class="card-text">93°<br />⛈</p>
+              <a href="#" class="btn btn-primary">Hourly details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" style="width: 10rem; height: 12rem;">
+            <div class="card-body">
+              <h5 class="card-title">Thursday</h5>
+              <p class="card-text">94°<br />☁️</p>
+              <a href="#" class="btn btn-primary">Hourly details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" style="width: 10rem; height: 12rem;">
+            <div class="card-body">
+              <h5 class="card-title">Friday</h5>
+              <p class="card-text">95°<br />🌦</p>
+              <a href="#" class="btn btn-primary">Hourly details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
